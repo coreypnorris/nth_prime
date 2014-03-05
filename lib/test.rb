@@ -5,7 +5,7 @@ def nth_prime(number)
   value = 1
 
   list.each do |i|
-    list = list.reject { |i| i % prime == 0 && i != prime }
+    list = list.reject { |i| i % prime == 0 && i != prime && i ! == 2 }
     prime += 1
   end
   list.each do |j|
@@ -16,4 +16,4 @@ def nth_prime(number)
   empty_hash[number]
 end
 
-print nth_prime(1)
+print nth_prime(2)
