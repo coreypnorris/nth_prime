@@ -12,6 +12,9 @@ def nth_prime(number)
     empty_hash[j] = value
     value += 1
   end
+  if list.empty?
+    empty_hash[2] = 1
+  end
   empty_hash = empty_hash.invert
   empty_hash[number]
 end
